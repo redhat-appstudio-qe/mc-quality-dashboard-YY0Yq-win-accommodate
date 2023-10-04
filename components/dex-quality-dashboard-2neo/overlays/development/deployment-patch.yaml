@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dex-quality-dashboard-2neo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-qwax-tenant/mc-quality-dashboard/dex-quality-dashboard-2neo@sha256:1ee5c3683ade2c07abab0d82b74b79faf2d8fefcffc55d8b99bee30025eba5ac
+        name: dex
+        resources: {}
+status: {}
